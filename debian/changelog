@@ -1,3 +1,9 @@
+vice (r40115.v128-1) UNRELEASED; urgency=medium
+
+  * Bump to VICE head.
+
+ -- June Tate-Gans <june@theonelab.com>  Sat, 05 Jun 2021 21:34:29 -0500
+
 vice (3.5.0.v128-1) sid; urgency=medium
 
   * Bump to VICE 3.5
