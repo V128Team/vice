@@ -1,0 +1,72 @@
+This package was created from sources made available via the VICE home
+page at http://vice-emu.sourceforge.net/
+
+Upstream authors:
+	Andreas Boose,
+	Tibor Biczo,
+	Dag Lem,
+	Andreas Dehmel,
+	Andreas Matthies,
+	Martin Pottendorfer,
+	Spiro Trikaliotis,
+	Marco van den Heuvel,
+	Christian Vogelgsang,
+	Fabrizio Gennari,
+	Markus Brenner,
+	David Hansel,
+	Thomas Bretz,
+	Daniel Sladic,
+	Ettore Perazzoli,
+	André Fachat,
+	Teemu Rantanen,
+	Jouko Valta,
+	Jarkko Sonninen,
+	Groepaz,
+	Olaf Seibert,
+	Marcus Sutton,
+	Kajtar Zsolt,
+	AreaScout,
+	Bas Wassink.
+
+Copyright:
+	1999-     Martin Pottendorfer <pottendo@gmx.net>
+	2005-     Marco van den Heuvel <blackystardust68@yahoo.com>
+	2002-     Fabrizio Gennari <fabrizio.ge@tiscalinet.it>
+	2009-     Groepaz <groepaz@gmx.net>
+	2010-     Olaf Seibert <rhialto@falu.nl>
+	2011-     Marcus Sutton <loggedoubt@gmail.com>
+	2002-     Kajtar Zsolt <soci@c64.rulez.org>
+	2016-     AreaScout <areascout@gmx.at>
+	2016-     Bas Wassink <b.wassink@ziggo.nl>
+	1998-2007 Andreas Boose
+	1998-2007 Dag Lem
+	1998-2007 Tibor Biczo
+	1999-2007 Andreas Dehmel
+	1999-2007 Andreas Matthies
+	2000-2007 Spiro Trikaliotis
+	2003-2005 David Hansel
+	2000-2004 Markus Brenner
+
+	1999-2004 Thomas Bretz
+	1997-2001 Daniel Sladic
+	1996-1999 Ettore Perazzoli
+	1996-1999 André Fachat
+	1993-1994, 1997-1999 Teemu Rantanen
+	1993-1996 Jouko Valta
+	1993-1994 Jarkko Sonninen
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License with
+your Debian GNU/Linux system, in /usr/share/common-licenses, or with the
+Debian GNU/Linux vice source package as the file COPYING. If not,
+write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+Boston, MA 02110-1301, USA.

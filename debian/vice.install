@@ -1,0 +1,3 @@
+doc/html/*.html		usr/share/doc/vice/html/
+debian/icons/*		usr/share/pixmaps/
+debian/desktop/*	usr/share/applications/

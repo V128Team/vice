@@ -1,0 +1,7 @@
+config.log
+libvicetest.a
+vicetest.o
+po/*.gmo
+src/geninfocontrib
+src/gentranslate
+src/resid-dtv/.autoconf.out

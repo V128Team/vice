@@ -1,0 +1,9 @@
+Document: vice
+Title: Vice Manual
+Author: The Vice Team
+Abstract: Documentation for the Versatile Commodore Emulator.
+Section: Emulators
+
+Format: HTML
+Index: /usr/lib/vice/doc/vice_toc.html
+Files: /usr/lib/vice/doc/*.html

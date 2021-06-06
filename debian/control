@@ -1,0 +1,48 @@
+Source: vice
+Build-Depends:
+ autoconf,
+ automake,
+ autotools-dev,
+ bison++ | bison,
+ debhelper-compat (= 13),
+ dos2unix,
+ flex,
+ gcc-9,
+ libasound2-dev [linux-any],
+ libavformat-dev (>=6:10),
+ libglew-dev,
+ libgtk2.0-dev,
+ libgtkglext1-dev,
+ libieee1284-3-dev [!hurd-i386],
+ libjpeg-dev,
+ libmp3lame-dev,
+ libpcap-dev,
+ libpng-dev,
+ libpulse-dev,
+ libreadline-dev,
+ libsdl2-dev,
+ libsdl2-image-dev,
+ libswscale-dev,
+ libvte-2.91-dev,
+ libxaw7-dev,
+ texinfo,
+ xa65,
+ xfonts-utils,
+ yasm (>= 1.2)
+Section: contrib/otherosfs
+Priority: optional
+Maintainer: June Tate-Gans <june@theonelab.com>
+Homepage: http://vice-emu.sourceforge.net/
+Standards-Version: 4.3.0
+
+Package: vice
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, dpkg (>= 1.15.4) | install-info
+Description: Versatile Commodore Emulator
+ VICE emulates well the hardware of the Commodore Business Machines of
+ the pre-Amiga era. Supported are the various Pets, the VIC-20, the
+ Commodore 64, the Commodore 128, the CBM-II series, and the PLUS/4.
+ .
+ This version contains the v128 hacked up version of VICE that
+ includes the ROMs and also is built to run on the vice-embedded
+ distro built for the hardware.

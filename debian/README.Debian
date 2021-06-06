@@ -1,0 +1,9 @@
+vice for Debian
+---------------
+
+This emulator won't work without ROM images for many of the chips used
+in the Commodore 8-bit machines.  You'll have to get those on your
+own, and for more information on how to do that, read the README.ROMs
+file.
+
+ -- Zed Pobre <zed@debian.org>, 2000.06.18

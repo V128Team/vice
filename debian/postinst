@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+
+#echo $0 "$@"
+#set -x
+
+#DEBHELPER#
+
+if [ "$1" = configure ] && dpkg --compare-versions "$2" lt-nl 0.14.2.70-1; then
+    DIVERSIONS=/var/lib/dpkg/diversions
+    [ -r "$DIVERSIONS" ] || DIVERSIONS=/var/state/dpkg/diversions
+    [ -r "$DIVERSIONS" ] || DIVERSIONS=""
+   
+    [ "$DIVERSIONS" ] && {
+	echo "Attempting to clear out the old diversions..."
+	sed -n 's@^\(/usr/lib/vice/.*\)[.]distrib$@\1@p' < $DIVERSIONS | \
+	xargs -i dpkg-divert --remove --rename {}
+    } || {
+	echo "There was a problem removing the diversions (has dpkg changed?);"
+	echo "you may want to make sure that there are no (local) diversions"
+	echo "under /usr/lib/vice/ .  [sorry!]"
+	sleep 5
+    }
+fi

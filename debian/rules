@@ -1,0 +1,48 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+unexport HOME
+PKGDIR:=$(CURDIR)/debian/vice
+
+override_dh_auto_configure:
+	CC=gcc-9 LD=gcc-9 ./configure \
+		--prefix=/usr \
+        --infodir=/usr/share/info \
+		--mandir=/usr/share/man \
+        --disable-html-docs \
+        --disable-pdf-docs \
+        --disable-platformdox \
+        --enable-arch=yes \
+		--with-png \
+		--with-jpeg \
+        --enable-ethernet \
+		--enable-lame \
+		--enable-rs232 \
+		--enable-ipv6 \
+		--with-pulse \
+		--enable-realdevice \
+		--enable-sdlui2 \
+		--verbose
+
+override_dh_install:
+	dh_install
+	# remove extra licence file
+	rm -f $(PKGDIR)/usr/lib/vice/doc/COPYING
+	rm -rf $(PKGDIR)/usr/share/info/
+	# remove duplicated documentation
+	rm -rf $(PKGDIR)/usr/lib/vice/doc/
+	ln -sf vice_toc.html $(PKGDIR)/usr/share/doc/vice/html/index.html
+	ln -sf ../../share/doc/vice/html $(PKGDIR)/usr/lib/vice/doc
+	# install all 128 keymaps to /usr/share/vice
+	install -d -m755 -oroot -groot $(PKGDIR)/usr/lib/vice/keymaps
+	install -m644 -oroot -groot data/C128/*.vkm $(PKGDIR)/usr/lib/vice/keymaps/
+	rm -rf $(PKGDIR)/usr/share/info/
+
+%:
+	dh $@
+
+.PHONY: override_dh_auto_configure override_dh_install override_dh_installinfo

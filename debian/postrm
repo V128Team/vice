@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+#echo $0 "$@"
+#set -x
+
+#DEBHELPER#
+
+# we're getting out of town
+if [ "$1" = purge -a -d /usr/lib/vice ]; then
+    echo -n "Removing /usr/lib/vice/ (ROM images) ... "
+    rm -r /usr/lib/vice
+    echo done.
+fi

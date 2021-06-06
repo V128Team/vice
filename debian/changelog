@@ -1,0 +1,11 @@
+vice (3.5.0.v128-1) sid; urgency=medium
+
+  * Bump to VICE 3.5
+
+ -- June Tate-Gans <june@theonelab.com>  Mon, 31 May 2021 14:10:25 -0500
+
+vice (3.4.0.v128-1) sid; urgency=medium
+
+  * First release
+
+ -- June Tate-Gans <june@theonelab.com>  Fri, 28 Dec 2018 19:06:58 +0000
