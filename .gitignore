@@ -41,3 +41,14 @@ infocontrib.h
 debug.h
 compile
 *.pdf
+aclocal.m4
+configure
+AndroidManifest.xml
+COPYING
+INSTALL
+wave6581_*.h
+wave8580_*.h
+svnversion.h
+mon_lex.*
+mon_parse.*
+*.o65
