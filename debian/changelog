@@ -1,8 +1,14 @@
-vice (40115.v128-1) UNRELEASED; urgency=medium
+vice (40171.v128-1ubuntu1) UNRELEASED; urgency=medium
+
+  * Integrate dual window mode and bump to head.
+
+ -- June Tate-Gans <june@theonelab.com>  Mon, 14 Jun 2021 21:20:53 -0500
+
+vice (40115.v128-1ubuntu1) UNRELEASED; urgency=medium
 
   * Bump to VICE head.
 
- -- June Tate-Gans <june@theonelab.com>  Sat, 05 Jun 2021 21:34:29 -0500
+ -- June Tate-Gans <june@theonelab.com>  Mon, 14 Jun 2021 21:20:53 -0500
 
 vice (3.5.0.v128-1) sid; urgency=medium
 
